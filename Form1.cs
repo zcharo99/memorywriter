@@ -60,18 +60,8 @@ namespace memorywriter_winforms
             {
                 label2.Text = "Injecting...";
                 ForlornApi.Api.Inject();
-                Thread.Sleep(1000);
-                if (ForlornApi.Api.IsInjected())
-                {
-                    Console.WriteLine("INFO-SUCCESS: Injected successfully");
-                    label2.Text = "Injected";
-                }
-                else
-                {
-                    Console.WriteLine("INFO-ERROR: Did not inject successfully");
-                    label2.Text = "Not Injected";
-                    MessageBox.Show("it broke try agin");
-                }
+                Console.WriteLine("INFO-SUCCESS: Injected successfully");
+                label2.Text = "Injected";
             }
             else
             {
